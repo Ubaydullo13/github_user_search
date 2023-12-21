@@ -29,6 +29,15 @@ function updateResult(data) {
   const website = document.querySelector(".websites");
   const company = document.querySelector(".companies");
 
+
+  const elementsWithNotAvailable = [
+    location,
+    twitter,
+    website,
+    company,
+  ];
+
+  
   githubName.textContent = data.name || githubName.style.block;
   githubUserName.textContent = `@${data.login}`;
   githubJoineDate.textContent = `Joined: ${new Date(
@@ -43,6 +52,14 @@ function updateResult(data) {
   website.textContent = data.blog.split("/")[2] || "Not Available";
   company.textContent = data.company || "Not Available";
 
+
+  elementsWithNotAvailable.forEach(element => {
+    if (element.textContent === 'Not Available') {
+      element.classList.add('not-available');
+    }else{
+      element.classList.remove('not-available');
+    }
+  });
   
   const avatarImage = document.querySelector(".mainImg img");
   avatarImage.src = data.avatar_url;

@@ -257,6 +257,10 @@ header {
   margin-right: 10px;
 }
 
+.not-available {
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 769px) {
   .search {
     width: 574px;
