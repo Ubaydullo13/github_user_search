@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>GitHub user search app</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h2 class="head">devfinder</h2>
+      <div class="light-dark mode">
+        <button class="color-mode__btn light-hidden">
+          LIGHT
+          <img src="./images/light-icon.svg" alt="" />
+        </button>
+        <button class="color-mode__btn dark-hidden">
+          DARK
+          <img src="./images/dark-icon.svg" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <!-- SEARCH -->
+    <div class="search">
+      <div class="searchText">
+        <img src="./images/search-icon.svg" alt="" />
+        <input type="text" placeholder="Search GitHub username..." />
+      </div>
+      <button class="searchBtn">Search</button>
+    </div>
+
+    <!-- RESULT CONTAINER -->
+
+    <div class="resultBody">
+      <div class="githubHead">
+        <div class="mainImg"><img src="./images/avatar.png" alt="" /></div>
+        <div class="githubInfo">
+          <div class="githubUser">GitHub Username</div>
+          <div class="githubUserName"><a href="">@githubusername</a></div>
+          <div class="githubJoineDate">Joined Date</div>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="githubFact">
+        <div class="githubBio">GitHub Bio...</div>
+
+        <div class="githubRepo">
+          <div class="repos">
+            <div class="repoHeading">Repos</div>
+            <div class="repoTotal">0</div>
+          </div>
+          <div class="followers">
+            <div class="followersHeading">Followers</div>
+            <div class="followersTotal">0</div>
+          </div>
+          <div class="following">
+            <div class="followingHeading">Following</div>
+            <div class="followingTotal">0</div>
+          </div>
+        </div>
+
+        <div class="githubSocial">
+          <div class="location">
+            <img src="./images/location-icon.svg" alt="" />
+            <p class="locations">Location</p>
+          </div>
+          <div class="twitter">
+            <img src="./images/twitter-icon.svg" alt="" />
+            <p class="twit">Twitter</p>
+          </div>
+          <div class="website">
+            <img src="./images/url-icon.svg" alt="" />
+            <p class="websites">Website</p>
+          </div>
+          <div class="company">
+            <img src="./images/office-building.svg" alt="" />
+            <p class="companies">Company</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
