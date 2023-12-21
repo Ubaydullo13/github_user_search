@@ -131,6 +131,10 @@ header {
   cursor: pointer;
 }
 
+.searchBtn:hover{
+  opacity: 0.5;
+}
+
 .resultBody {
   background-color: var(--search-bg-color);
   width: 730px;
